@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<title>ReservaYá</title>
+<style type="text/css">
+	
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalRegistro">
+  Launch demo modal
+</button>
+  <!-- Modal: alta cliente ||alta comercio -->
+  <div class="modal fade" id="modalRegistro" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal contentido:-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Registro</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        
+        <nav>
+		  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+			<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Clientes</a>
+			<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Comercios</a>
+		  </div>
+		</nav>
+		<div class="tab-content" id="nav-tabContent">
+		  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+		  	<form> <!-- FormClientes: Inicio-->
+			  <div class="form-row">
+				<div class="col-md-4 mb-3">
+				  <label for="inClienteNombre">Nombre</label>
+				  <input type="text" class="form-control" id="inClienteNombre" placeholder="Nombre" value="" required>
+				</div>
+				<div class="col-md-4 mb-3">
+				  <label for="inClienteApellidos">Apellidos</label>
+				  <input type="text" class="form-control" id="inClienteApellidos" placeholder="Apellidos" value="" required>
+				</div>
+			  </div>
+			  <div class="form-row">
+				<div class="col-md-6 mb-3">
+				  <label for="inClienteCiudad">Ciudad</label>
+				  <input type="text" class="form-control" id="inClienteCiudad" placeholder="Ciudad" required>
+				</div>
+				<div class="col-md-3 mb-3">
+				  <label for="inClienteProvincia">Provincia</label>
+				  <input type="text" class="form-control" id="inClienteProvincia" placeholder="Provincia" required>
+				</div>
+				<div class="col-md-3 mb-3">
+				  <label for="inClienteCp">C.P.</label>
+				  <input type="text" class="form-control" id="inClienteCp" placeholder="Cod. Postal" required>
+				</div>
+			  </div>
+			 <div class="form-row">
+			  <div class="col-md-4 mb-3">
+				   <label for="exampleInputEmail1">Email</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+				</div>
+			  <div class="col-md-4 mb-3">
+				  <label for="inClienteUsuario">Usuario</label>
+				  <div class="input-group">
+					<div class="input-group-prepend">
+					  <span class="input-group-text" id="inputGroupPrepend2">@</span>
+					</div>
+					<input type="text" class="form-control" id="inClienteUsuario" placeholder="Usuario" aria-describedby="inputGroupPrepend2" required>
+				  </div>
+				</div>
+				
+				
+			
+			 </div>
+ 			<div class="form-row">
+				<div class="col-md-4 mb-3">
+				  <label for="inClienteUsuarioPass">Clave</label>
+				  <div class="input-group">
+					 <input type="password" id="inClienteUsuarioPass" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+					<small id="passwordHelpInline" class="text-muted">
+					 Entre 8-20 caracteres.
+					</small>
+				  </div>
+				</div>
+				<div class="col-md-4 mb-3">
+				  <label for="inClienteUsuarioPassRep">Repetir clave</label>
+				  <div class="input-group">
+					 <input type="password" id="inClienteUsuarioPassRep" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+					
+				  </div>
+				</div>
+			</div>
+
+			  <div class="form-group">
+				<div class="form-check">
+				  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+				  <label class="form-check-label" for="invalidCheck2">
+					Agree to terms and conditions
+				  </label>
+				</div>
+			  </div>
+			  <button class="btn btn-primary" type="submit">Crear</button>
+			</form><!-- FormClientes: Fin-->
+		  </div>
+		  
+		  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+		  		<form> <!-- FormComercios: 
+		  		******************************************
+		  		Inicio-->
+			  <div class="form-row">
+				<div class="col-md-4 mb-3">
+				  <label for="inComercioNombre">Nombre</label>
+				  <input type="text" class="form-control" id="inComercioNombre" placeholder="Nombre" value="" required>
+				</div>
+				<div class="col-md-4 mb-3">
+				  <label for="inComercioCif">CIF</label>
+				  <input type="text" class="form-control" id="inComercioCif" placeholder="Cif" value="" required>
+				</div>
+			  </div>
+			    
+			  <div class="form-row">
+				<div class="col-md-12 mb-3">
+				  <label for="inCalleComercio">Calle</label>
+				  <input type="text" class="form-control" id="inCalleComercio" placeholder="C/" required>
+				</div>
+			</div>
+
+			  <div class="form-row">
+				<div class="col-md-6 mb-3">
+				  <label for="validationDefault03">Ciudad</label>
+				  <input type="text" class="form-control" id="validationDefault03" placeholder="Ciudad" required>
+				</div>
+				<div class="col-md-3 mb-3">
+				  <label for="inComercioProvincia">Provincia</label>
+				  <input type="text" class="form-control" id="inComercioProvincia" placeholder="Provincia" required>
+				</div>
+				<div class="col-md-3 mb-3">
+				  <label for="inComercioCp">C.P.</label>
+				  <input type="text" class="form-control" id="inComercioCp" placeholder="Cod. Postal" required>
+				</div>
+			  </div>
+			 <div class="form-row">
+			  <div class="col-md-4 mb-3">
+				   <label for="inComercioEmail1">Email</label>
+						<input type="email" class="form-control" id="inComercioEmail1" aria-describedby="emailHelp" placeholder="Email">
+				</div>
+			  <div class="col-md-4 mb-3">
+				  <label for="inComercioUsuario">Usuario</label>
+				  <div class="input-group">
+					<div class="input-group-prepend">
+					  <span class="input-group-text" id="inComercioPrepend2">@</span>
+					</div>
+					<input type="text" class="form-control" id="inComercioUsuario" placeholder="Usuario" aria-describedby="inputGroupPrepend2" required>
+				  </div>
+				</div>
+				
+				
+			
+			 </div>
+ 			<div class="form-row">
+				<div class="col-md-4 mb-3">
+				  <label for="inComercioUsuarioPass">Clave</label>
+				  <div class="input-group">
+					 <input type="password" id="inComercioUsuarioPass" class="form-control mx-sm-3" aria-describedby="passwordHelpinComercio">
+					<small id="passwordHelpinComercio" class="text-muted">
+					 Entre 8-20 caracteres.
+					</small>
+				  </div>
+				</div>
+				<div class="col-md-4 mb-3">
+				  <label for="inComercioUsuarioPassRep">Repetir clave</label>
+				  <div class="input-group">
+					 <input type="password" id="inComercioUsuarioPassRep" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+					
+				  </div>
+				</div>
+			</div>
+
+			  <div class="form-group">
+				<div class="form-check">
+				  <input class="form-check-input" type="checkbox" value="" id="chechkInComercio" required>
+				  <label class="form-check-label" for="chechkInComercio">
+					Agree to terms and conditions
+				  </label>
+				</div>
+			  </div>
+			  <button class="btn btn-primary" type="submit">Crear</button>
+			</form><!-- FormClientes: Fin-->
+		  </div>
+		  
+		</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>  <!-- Fin modal registro /********************************* -->
+
+  
+</div><!-- container Principal-->
+ 
+
+ <header>
+ </header>
+     <footer class="text-muted">
+      
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+ <!-- Bootstrap core JavaScript
+    ================================================== -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
