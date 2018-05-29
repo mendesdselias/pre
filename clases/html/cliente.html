@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Elías Mendes dos Santos">
+    <title>ReservaYá</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/carousel.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+<!-- *****************************************************************************************************************
+		BARRA NAVEGACION
+ ***************************************************************************************************************** -->
+
+<header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark pt-4"> <a class="navbar-brand" href="index.html">ReservaYá</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav m-auto">
+        <li class="nav-item active"> <a class="nav-link h3" href="index.html">Inicio <span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item active"> <a class="nav-link h3" href="conocenos.html">Conócenos </a> </li>
+        <li class="nav-item active"> <a class="nav-link h3" href="contacto.html">Contacto </a> </li>
+      </ul>
+          <button class="btn btn-outline-success my-2 my-sm-0"  data-toggle="modal" data-target="#modalAcceso" >Salir</button>
+        </div>
+  </nav>
+    </header>
+<main role="main" style="background-color: #D5D7CA"> 
+      <!-- *****************************************************************************************************************
+		BUSCADOR
+ ***************************************************************************************************************** -->
+      
+      <div id="headerwrap" class="img-fluid" style="background-image: url(../../img/imgApp/agenda.jpg);" alt="Responsive image">
+    <div class="container">
+          <div class="row mt-4">
+        <div class="col-lg-12">
+              <h1 style="color: inherit" id="bienvenidoH1"></h1>
+              
+              <!-- aqui iran las reservas **** -->
+              
+              <h2 style="color: currentColor">Aqui puedes gestionar tus reservas</h2>
+            </div>
+      </div>
+          <!-- /row -->
+          
+          <div class="row mt-3">
+        <div class="col-lg-12">
+              <div class="input-group input-group-lg">
+            <div class="input-group-append"> 
+                  <!-- aqui iran las reservas **** --> 
+                </div>
+          </div>
+            </div>
+        <!-- /buscadorPrincipal --> 
+      </div>
+          <!-- /row --> 
+          
+        </div>
+    <!-- /container --> 
+  </div>
+      <!-- /headerwrap --> 
+      
+      <!-- *****************************************************************************************************************
+		reservas realizadas
+ ***************************************************************************************************************** -->
+      
+      <div id="cwrap">
+    <div class="row mt-4 ml-5">
+          <div class="col-lg-12"> 
+        <!-- aqui iran las reservas **** -->
+        
+        <h2 style="color: currentColor"> Y aqui tus datos personales</h2>
+      </div>
+        </div>
+  </div>
+      
+      <!-- *****************************************************************************************************************
+	 FOOTER
+	 ***************************************************************************************************************** -->
+      <div id="footerwrap">
+    <div class="container">
+          <div class="row">
+        <div class="col-lg-4">
+              <h4>Sobre nosotros</h4>
+              <div class="hline-w"></div>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+        <div class="col-lg-4">
+              <h4>RRSS</h4>
+              <div class="hline-w"></div>
+              <p> 
+            <!-- Add font awesome icons --> 
+            <a href="#" class="fa fa-facebook"></a> <a href="#" class="fa fa-twitter"></a> </p>
+            </div>
+        <div class="col-lg-4">
+              <h4>Dirección fiscal</h4>
+              <div class="hline-w"></div>
+              <p> Some Ave, 987,<br/>
+            23890, New York,<br/>
+            United States.<br/>
+          </p>
+            </div>
+      </div>
+          <! --/row --> 
+        </div>
+    <! --/container --> 
+  </div>
+      <! --/footerwrap --> 
+    </main>
+<!-- *****************************************************************************************************************
+	 FIN  --  FOOTER
+	 ***************************************************************************************************************** -->
+</body>
+    </html>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../clases/js/jquery.js"></script>
+<script src="../../clases/js/popper.min.js"></script>
+<script src="../../bootstrap/css/bootstrap.min.css"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="../../clases/js/holder.min.js"></script>
+
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="../../clases/js/holder.min.js"></script>
+
+<!--
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script>
+		
+
+					
+			$(document).ready(function() {
+				  //alert("document ready occurred!");
+				var usuario;
+				$.ajax({
+					data: '',
+					url:   '../html/sesion.php',
+					method:  'GET',
+					type: 'json',
+					success: function(data){
+							usuario = JSON.parse(data).usuario;
+							$('#bienvenidoH1').text("Bienvenido, "+usuario);
+						}
+				});
+		
+			
+			});
+
+        	function logout(){
+		
+			}
+		
+		
+		
+	</script>

@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Elías Mendes dos Santos">
+<title>ReservaYá</title>
+
+<!-- Bootstrap core CSS -->
+<link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="../css/style.css" rel="stylesheet">
+<link href="../css/carousel.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- *****************************************************************************************************************
+		BARRA NAVEGACION
+ ***************************************************************************************************************** -->
+
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark pt-4"> <a class="navbar-brand" href="index.html">ReservaYá</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item active"> <a class="nav-link h3" href="index.html">Inicio <span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item active"> <a class="nav-link h3" href="conocenos.html">Conócenos </a> </li>
+        <li class="nav-item active"> <a class="nav-link h3" href="contacto.html">Contacto </a> </li>
+      </ul>
+      <button class="btn my-2 my-sm-0 buttonTop" data-toggle="modal" data-target="#modalAcceso" id="btnAccederMenu" style="display: none">Acceder</button>
+      <button class="btn  my-2 my-sm-0 ml-2 buttonTop" data-toggle="modal" data-target="#modalRegistro" id="btnRegistrar" style="display: none">Crear cuenta</button>
+      <button class="btn btn-outline-success my-2 mr-2 my-sm-0" id="btnSalir" style="display: none" onClick="salir()"> Salir </button>
+    </div>
+  </nav>
+</header>
+<main role="main" style="background-color: #D5D7CA"> 
+  <!-- *****************************************************************************************************************
+		BUSCADOR
+ ***************************************************************************************************************** -->
+  
+  <div id="headerwrap" class="img-fluid" style="background-image: url(../../img/imgApp/agenda.jpg);" alt="Responsive image">
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-lg-12">
+          <h1 style="color: inherit">Pide cita en tu comercio más cercano</h1>
+          <h2 style="color: currentColor">Busca y evita esperas!</h2>
+        </div>
+      </div>
+      <!-- /row -->
+      
+      <div class="row mt-3">
+        <div class="col-lg-12">
+          <div class="input-group input-group-lg">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" style="background-color: #F0A105">Buscar</button>
+            </div>
+            <input type="text" id="inputBuscador" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+          </div>
+        </div>
+        <!-- /buscadorPrincipal --> 
+      </div>
+      <!-- /row --> 
+      
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /headerwrap --> 
+  
+  <!-- START THE FEATURETTES --> 
+  
+  <!-- *****************************************************************************************************************
+		TARJETTAS DESTACADOS
+ ***************************************************************************************************************** -->
+  
+  <div id="cwrap">
+    <div class="container-fluid">
+      <h1 style="color: antiquewhite">Añadidos recientemente</h1>
+      <div class="row pt-2" >
+        <div class="col-md-4 bg">
+          <div class="card mb-4 box-shadow"> <img class="card-img-top" src="../../img/imgEmpresas/franPeluquero.jpg" alt="Card image cap" data-holder-rendered="true" style="height: 325px; width: 100%; display: block;">
+            <div class="card-body" style="">
+              <p class="card-text"> Reserva cita para tu peluqeria más cool. Consultas de 30 min*.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-info">ReservaYa!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow"> <img class="card-img-top" src="../../img/imgEmpresas/fisioSierra.jpeg" alt="Card image cap"  data-holder-rendered="true" style="height: 325px; width: 100%; display: block;">
+            <div class="card-body" style="">
+              <p class="card-text"> Reserva cita para tu fisioterapueta más eficaz. Consultas de 1 hora*.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-info">ReservaYa!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow"> <img class="card-img-top" src="../../img/imgEmpresas/tallerMidas.jpg" alt="Card image cap" data-holder-rendered="true" style="height:325px; width: 100%; display: block;">
+            <div class="card-body" style="">
+              <p class="card-text"> Reserva cita para tu mecánico más rápido. Consultas de 1 hora*.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-info">ReservaYa!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- *****************************************************************************************************************
+	 FOOTER
+	 ***************************************************************************************************************** -->
+  <div id="footerwrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h4>Sobre nosotros</h4>
+          <div class="hline-w"></div>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+        <div class="col-lg-4">
+          <h4>RRSS</h4>
+          <div class="hline-w"></div>
+          <p> 
+            <!-- Add font awesome icons --> 
+            <a href="#" class="fa fa-facebook"></a> <a href="#" class="fa fa-twitter"></a> </p>
+        </div>
+        <div class="col-lg-4">
+          <h4>Dirección fiscal</h4>
+          <div class="hline-w"></div>
+          <p> Some Ave, 987,<br/>
+            23890, New York,<br/>
+            United States.<br/>
+          </p>
+        </div>
+      </div>
+      <! --/row --> 
+    </div>
+    <! --/container --> 
+  </div>
+  <! --/footerwrap --> 
+</main>
+<!-- *****************************************************************************************************************
+	 FIN  --  FOOTER
+	 ***************************************************************************************************************** --> 
+
+<!-- *****************************************************************************************************************
+		FORM LOGION 
+ ***************************************************************************************************************** -->
+<div class="modal fade" id="modalAcceso" tabindex="-1" role="dialog" aria-labelledby="modalAccesoLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Acceso</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body" >
+        <div class="form-group">
+          <label for="dropEmailForm" id="emailLoggin">Id usuario</label>
+          <input type="text" class="form-control" id="dropEmailForm" placeholder="usuario">
+        </div>
+        <div class="form-group">
+          <label for="dropPassForm" id="passLoggin">Contraseña</label>
+          <input type="password" class="form-control" id="dropPassForm" placeholder="Contraseña">
+        </div>
+        <button type="button" id="btnAcceder" onclick="loggin()" class="btn btn-primary">Acceder</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal: acceso FIN--> 
+
+<!-- *****************************************************************************************************************
+		FORM ALTA
+ ***************************************************************************************************************** -->
+<div class="modal fade" id="modalRegistro" role="dialog">
+  <div class="modal-dialog"> 
+    
+    <!-- Modal contentido:-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Registro</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist"> <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Clientes</a> <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Comercios</a> </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <form>
+              <!-- FormClientes: Inicio-->
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label for="inClienteNombre">Nombre</label>
+                  <input type="text" class="form-control" id="inClienteNombre" placeholder="Nombre" value="" required>
+                </div>
+                <div class="col-md-8 mb-3">
+                  <label for="inClienteApellidos">Apellidos</label>
+                  <input type="text" class="form-control" id="inClienteApellidos" placeholder="Apellidos" value="" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="inClienteCiudad">Ciudad</label>
+                  <input type="text" class="form-control" id="inClienteCiudad" placeholder="Ciudad" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="inClienteProvincia">Provincia</label>
+                  <input type="text" class="form-control" id="inClienteProvincia" placeholder="Provincia" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="inClienteCp">C.P.</label>
+                  <input type="text" class="form-control" id="inClienteCp" placeholder="Cod. Postal" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="inClienteUsuario">Usuario</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="inClienteUsuario" placeholder="Usuario" aria-describedby="inputGroupPrepend2" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="inClienteUsuarioPass">Contraseña</label>
+                  <div class="input-group">
+                    <input type="password" id="inClienteUsuarioPass" class="form-control " aria-describedby="passwordHelpInline" placeholder="...">
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="inClienteUsuarioPassRep">Repetir Contraseña</label>
+                  <div class="input-group">
+                    <input type="password" id="inClienteUsuarioPassRep" class="form-control " aria-describedby="passwordHelpInline" placeholder="...">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                  <label class="form-check-label" for="invalidCheck2"> Agree to terms and conditions </label>
+                </div>
+              </div>
+              <button class="btn btn-primary" type="submit">Crear</button>
+            </form>
+            <!-- FormClientes: Fin--> 
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <form>
+              <!-- FormComercios: 
+					******************************************
+					Inicio-->
+              <div class="form-row">
+                <div class="col-md-8 mb-3">
+                  <label for="inComercioNombre">Nombre</label>
+                  <input type="text" class="form-control" id="inComercioNombre" placeholder="Razón social" value="" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="inComercioCif">CIF</label>
+                  <input type="text" class="form-control" id="inComercioCif" placeholder="Cif" value="" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="inCalleComercio">Calle</label>
+                  <input type="text" class="form-control" id="inCalleComercio" placeholder="C/" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="validationDefault03">Ciudad</label>
+                  <input type="text" class="form-control" id="validationDefault03" placeholder="Ciudad" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="inComercioProvincia">Provincia</label>
+                  <input type="text" class="form-control" id="inComercioProvincia" placeholder="Provincia" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="inComercioCp">C.P.</label>
+                  <input type="text" class="form-control" id="inComercioCp" placeholder="Cod. Postal" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="inComercioEmail1">Email</label>
+                  <input type="email" class="form-control" id="inComercioEmail1" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="inComercioUsuario">Usuario</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="inComercioUsuario" placeholder="Usuario" aria-describedby="inputGroupPrepend2" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="inComercioUsuarioPass">Contraseña</label>
+                  <div class="input-group">
+                    <input type="password" id="inComercioUsuarioPass" class="form-control" aria-describedby="passwordHelpinComercio" placeholder="...">
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="inComercioUsuarioPassRep">Repetir contraseña</label>
+                  <div class="input-group">
+                    <input type="password" id="inComercioUsuarioPassRep" class="form-control " aria-describedby="passwordHelpInline" placeholder="...">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="chechkInComercio" required>
+                  <label class="form-check-label" for="chechkInComercio"> Agree to terms and conditions </label>
+                </div>
+              </div>
+              <button class="btn btn-primary" type="submit">Crear</button>
+            </form>
+            <!-- FormClientes: Fin--> 
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- *****************************************************************************************************************
+				Fin modal registro 
+ ***************************************************************************************************************** --> 
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="../../clases/js/jquery.js"></script> 
+<script src="../../clases/js/popper.min.js"></script> 
+<script src="../../bootstrap/css/bootstrap.min.css"></script> 
+<!-- Just to make our placeholder images work. Don't actually copy the next line! --> 
+<script src="../../clases/js/holder.min.js"></script> 
+
+<!-- Just to make our placeholder images work. Don't actually copy the next line! --> 
+<script src="../../clases/js/holder.min.js"></script> 
+
+<!--
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>--> 
+<script src="../../bootstrap/js/bootstrap.min.js"></script> 
+
+<!-- *****************************************************************************************************************
+				SCRIPTS JQUERY  - JSON - DOM - AJAX
+ ***************************************************************************************************************** --> 
+<script>
+			$(document).ready(function() {
+				  //alert("document ready occurred!");
+				$.ajax({
+					data: '',
+					url:   '../html/sesion.php',
+					method:  'GET',
+					type: 'json',
+					success: function(data){
+						usuario = JSON.parse(data).usuario;
+						if(usuario != '' && usuario != null && usuario != 'No identificado'){// si esta logueado
+							$('#btnSalir').css('display','inline-block');
+						}else{
+							$('#btnAccederMenu').css('display','inline-block');
+							$('#btnRegistrar').css('display','inline-block');
+						}
+					}//fin success
+				}); // fin ajax
+			
+									});
+
+			
+        	function loggin(){
+			 	var val1 = document.getElementById('dropEmailForm').value;
+				var val2 = document.getElementById('dropPassForm').value;	
+	
+		
+				var parametros = {
+					"val1" : val1,
+					"val2" : val2
+        		};
+				$.ajax({
+					data:  parametros,
+					url:   '../html/loggin.php',
+					method:  'GET',
+					type: 'json',
+					success: function(data){
+						var aux = JSON.parse(data);
+						var tipo  = aux.TipoUsuario;
+						var mensaje = aux.mensaje;
+						var resultado = aux.resultado;
+						/*console.log("DATA ");
+						console.log(data);
+						console.log("DATA 2 ");
+						console.log(JSON.parse(data));*/
+						if(resultado ==('Exito')){
+							window.location.assign('../html/'+tipo+'.html')
+
+						}else{
+						 	//function pintarNotificacion(tipo, mensaje);
+							alert("Acceso denegado");
+						}
+						
+						/*$.each(JSON.parse(data), function(i, item) {
+							
+							if( item == ('Exito') ){
+								console.log('Exito!');	
+								// window.location.assign(TipoCliente)
+								 window.location.assign('../html/clientes.html')
+							}
+						}); */
+						
+					}
+						
+				});
+			}
+			function salir(){
+				var res = confirm("¿Está seguro de querer salir?");
+				if(res){
+					$.ajax({
+						data: '',
+						url:   '../html/logout.php',
+						method:  'GET',
+						type: 'json',
+						success: function(data){
+							window.location.assign('../html/index.html')
+						}
+					});//fin ajax
+				}//fin if
+			}//fin salir()
+
+	/*
+		$(function(){
+            $("#btnAcceder").click(function(){
+				loggin($('#dropEmailForm').val(),$('#dropPassForm').val());	
+				console.log("-> " + $('#dropEmailForm').val() +" - "+$('#dropPassForm').val());
+
+              });
+		 	function loggin(val1,val2){
+				var parametros = {
+					"val1" : val1,
+					"val2" : val2
+        		};
+				$.ajax({
+					data:  parametros,
+					url:   'loggin.php',
+					type:  'POST',
+					beforeSend: function () {
+						console.log("Procesando, espere por favor...");
+						}
+				});
+
+			}
+        });
+	*/
+      
+</script>
+</body>
+</html>

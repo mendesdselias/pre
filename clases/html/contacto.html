@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Elías Mendes dos Santos">
+
+    <title>ReservaYá</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/carousel.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+  </head>
+  <body style="background-color: #D5D7CA">
+
+  <!-- *****************************************************************************************************************
+		BARRA NAVEGACION
+ ***************************************************************************************************************** -->
+
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark pt-4"> <a class="navbar-brand" href="index.html">ReservaYá</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item active"> <a class="nav-link h3" href="index.html">Inicio <span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item active"> <a class="nav-link h3" href="conocenos.html">Conócenos </a> </li>
+        <li class="nav-item active"> <a class="nav-link h3" href="contacto.html">Contacto </a> </li>
+      </ul>
+      <button class="btn my-2 my-sm-0 buttonTop" data-toggle="modal" data-target="#modalAcceso" id="btnAccederMenu" style="display: none">Acceder</button>
+      <button class="btn  my-2 my-sm-0 ml-2 buttonTop" data-toggle="modal" data-target="#modalRegistro" id="btnRegistrar" style="display: none">Crear cuenta</button>
+      <button class="btn btn-outline-success my-2 mr-2 my-sm-0" id="btnSalir" style="display: none" onClick="salir()"> Salir </button>
+    </div>
+  </nav>
+</header>
+<main role="main" style="background-color: #D5D7CA"> 
+	<!-- *****************************************************************************************************************
+	 CONTACT FORMS
+	 ***************************************************************************************************************** -->
+
+	 <div class="container mt-5" >
+	 	<div class="row ">
+	 		<div class="col-lg-8">
+	 			<h4>¿Alguna sugerencia o duda?</h4>
+	 			<div class="hline"></div>
+		 		<p>	Te responderemos en la mayor brevedad posible!</p> <br/>
+		 				<form role="form">
+					  <div class="form-group">
+					    <label for="InputName1">Nombre</label>
+					    <input type="email" class="form-control" id="inpContactoNombre">
+					  </div>
+					  <div class="form-group">
+					    <label for="InputEmail1">Email</label>
+					    <input type="email" class="form-control" id="inpContactoEmail">
+					  </div>
+					  <div class="form-group">
+					    <label for="InputSubject1">Asunto</label>
+					    <input type="email" class="form-control" id="inpContactoAsunto">
+					  </div>
+					  <div class="form-group">
+					  	<label for="message1">Mensaje</label>
+					  	<textarea class="form-control" id="message1" rows="3"></textarea>
+					  </div>
+					  <button type="submit" class="btn btn-theme" id="btnContactoEnviar">Enviar</button>
+					</form>
+			</div><! --/col-lg-8 -->
+	 		
+	 		<div class="col-lg-4 mt-4">
+		 		<h4></h4>
+		 		<div class="hline"></div>
+		 				
+		 			<p>Teléfono: 984 28 24 29 </p>
+		 			<p>Oficina ubicada en el talud de la Eria, 2ª Planta. <br/>
+		 			Dirección: Calle Virgilio Palacio, 33013 Oviedo, Asturias
+		 			 </p>
+	 		</div>
+	 	</div><! --/row -->
+	 </div><! --/container -->
+
+
+	<!-- *****************************************************************************************************************
+	 FOOTER
+	 ***************************************************************************************************************** -->
+	 <div id="footerwrap" class="mt-5">
+	 	<div class="container">
+		 	<div class="row">
+		 		<div class="col-lg-4">
+		 			<h4>Sobre nosotros</h4>
+		 			<div class="hline-w"></div>
+		 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+		 		</div>
+		 		<div class="col-lg-4">
+		 			<h4>RRSS</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+						<!-- Add font awesome icons -->
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-twitter"></a>
+					</p>
+		 		</div>
+		 		<div class="col-lg-4">
+		 			<h4>Dirección fiscal</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 				Some Ave, 987,<br/>
+		 				23890, New York,<br/>
+		 				United States.<br/>
+		 			</p>
+		 		</div>
+		 	
+		 	</div><! --/row -->
+	 	</div><! --/container -->
+	 </div><! --/footerwrap -->          
+  </main>
+  
+  </body>
+</html>
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="../../clases/js/jquery.js"></script> 
+<script src="../../clases/js/popper.min.js"></script> 
+<script src="../../bootstrap/css/bootstrap.min.css"></script> 
+<!-- Just to make our placeholder images work. Don't actually copy the next line! --> 
+<script src="../../clases/js/holder.min.js"></script> 
+
+<!-- Just to make our placeholder images work. Don't actually copy the next line! --> 
+<script src="../../clases/js/holder.min.js"></script> 
+
+<!--
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>--> 
+<script src="../../bootstrap/js/bootstrap.min.js"></script> 
+<script>
+	$(document).ready(function() {
+				  //alert("document ready occurred!");
+				$.ajax({
+					data: '',
+					url:   '../html/sesion.php',
+					method:  'GET',
+					type: 'json',
+					success: function(data){
+						usuario = JSON.parse(data).usuario;
+						if(usuario != '' && usuario != null && usuario != 'No identificado'){// si esta logueado
+							$('#btnSalir').css('display','inline-block');
+						}else{
+							$('#btnAccederMenu').css('display','inline-block');
+							$('#btnRegistrar').css('display','inline-block');
+						}
+					}//fin success
+				}); // fin ajax
+			
+									
+	});
+</script>
